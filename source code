@@ -1,0 +1,37 @@
+/******************************************************************************
+
+Define a class Faculty. It contains the following attributes:
+
+(a) Name of the faculty
+(b) Qualification of the faculty
+(c) Subjects the faculty can teach
+Inherit the Faculty class into a regular faculty, who
+(a) is available full time (no consulting time is specified)
+(b) teaches at least three subjects
+(c) is part of the institute alone
+Inherit the Faculty class into visiting faculty, who
+(a) is available only on two to three days (consulting time is also to be
+specified)
+(b) teaches a single subject
+(c) is part of some other institute
+Provide virtual functions for reading and writing class objects of the classes
+given above..
+
+*******************************************************************************/
+#include <iostram>
+#include<string>
+using namespace std;
+
+class faculty{
+    
+    public:
+    
+    string name;
+    string qua;
+    string sub;
+    
+    public:
+    
+    virtual void input()=0;
+    virtual void display()=0;
+};
